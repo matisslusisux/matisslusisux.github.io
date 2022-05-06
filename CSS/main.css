@@ -9,4 +9,13 @@
 
     /* --font-primary: '?', type */
     --text-base-size: 1rem;
+    --text-xxl: 4rem;
+    --text-xl: 3rem;
+    --text-lg: 2rem;
+    --text-md: 1.2rem;
+}
+
+h1{
+    font-size: var(--text-xxl);
+
 }

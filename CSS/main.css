@@ -1,0 +1,12 @@
+/* @import the fonts here*/
+
+:root{
+    --colour-primary: #8D0801;
+    --colour-secondary: #F02D3A;
+    --colour-tertiary: #FFD3D1;
+    --colour-light: #FFFFFF;
+    --colour-dark: #6A6A6A;
+
+    /* --font-primary: '?', type */
+    --text-base-size: 1rem;
+}

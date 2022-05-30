@@ -1,0 +1,17 @@
+main{
+    margin-top: 5rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    padding: 10px 30px 10px 30px;
+}
+
+
+

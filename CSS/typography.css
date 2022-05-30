@@ -1,0 +1,55 @@
+@import url('//db.onlinewebfonts.com/c/23a51374dd39ab994489367e9f4e57f4?family=RACE1+Brannt+Plus+Chiseled+NCV');
+@import url('//db.onlinewebfonts.com/c/7716890b939cbfd5a39378ab8dc22c2b?family=BSB+Text+Classic');
+@import url('http://fonts.cdnfonts.com/css/momcake');
+
+:root{
+    --primary-font: 'RACE1 Brannt Plus Chiseled NCV', sans-serif;
+    --secondary-font: 'MOMCAKE', sans-serif;
+    --tertiary-font: 'BSB Text Classic', sans-serif;
+
+    --text-base-size: 1rem;
+    --text-xxl: 4rem;
+    --text-xl: 3rem;
+    --text-lg: 2rem;
+    --text-md: 1.2rem;
+}
+
+body{
+    font-size: var(--text-base-size);
+}
+
+h1{
+    font-size: var(--text-xxl);
+}
+
+h2{
+    font-size: var(--text-xl);
+}
+
+h3{
+    font-family: var(--secondary-font);
+    font-weight: bold;
+    font-size: var(--text-lg);
+}
+
+h4{
+    font-size: var(--text-md);
+    font-family: var(--tertiary-font);
+}
+
+div{
+    font-family: var(--primary-font);
+    font-size: var(--text-xxl);
+}
+
+li{
+    font-family: var(--tertiary-font);
+}
+
+p{
+    font-family: var(--tertiary-font);
+}
+
+header{
+
+}

@@ -14,9 +14,61 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: fixed;
+    position: relative;
     width: 100%;
     padding: 10px 30px 10px 30px;
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+a + a{
+    margin-left: 30px;
+}
+
+i + i {
+    margin-left: 15px;
+}
+
+.product-card{
+    border: 3px solid var(--colour-dark);
+    border-radius: 20px;
+    width: 500px;
+    box-shadow: 5px 5px 8px;
+    margin: 10px;
+    padding: 5px 0px 0px 15px;
+}
+
+.product-card-content{
+    float: left;
+    width: 50%;
+}
+
+.product-card > img{
+    float: right;
+    width: 50%;
+    border: 0px solid transparent;
+    border-radius: 0px 0px 20px 0px;
+}
+
+.button{
+    border: 3px solid var(--colour-dark);
+    border-radius: 20px;
+    margin: 10px;
+    padding: 5px 10px 5px 10px;
+}
+
+.comparison-container{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto;
+    grid-template-rows: auto auto auto auto;
+    justify-content: space-evenly;
 }
 
 @media screen and (max-width: 700px) {
@@ -40,40 +92,10 @@ header{
 }
 
 #feature-list{
-    position: relative;
-    padding: 100px 0 0 40px;
+    margin: 20px;
 }
 
-main{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin-top: 2rem;
-    margin-left: 2rem;
-    margin-right: 2rem;
-}
-
-a + a{
-    margin-left: 30px;
-}
-
-.product-card{
+#feature-list > i{
     border: 3px solid var(--colour-dark);
-    border-radius: 20px;
-    width: 400px;
-    box-shadow: 5px 3px 8px;
-    margin: 10px;
-    padding: 5px 0px 0px 15px;
-}
-
-.product-content{
-    float: left;
-    width: 50%;
-}
-
-.product-card > img{
-    float: right;
-    width: 50%;
-    border: 0px solid transparent;
-    border-radius: 0px 0px 20px 0px;
+    border-radius: 50%;
 }

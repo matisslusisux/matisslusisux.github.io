@@ -13,6 +13,8 @@
     --text-lg: 2rem;
     --text-inbetween: 1.6rem;
     --text-md: 1.2rem;
+
+    font-family: var(--tertiary-font);
 }
 
 body{
@@ -34,8 +36,8 @@ h3{
 }
 
 h4{
-    font-size: var(--text-md);
     font-family: var(--tertiary-font);
+    font-size: var(--text-md);
 }
 
 a{
@@ -53,4 +55,8 @@ a{
 
 .material-symbols-outlined{
     font-size: var(--text-xl);
+}
+
+.additional-features{
+    list-style: disc;
 }

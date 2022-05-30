@@ -3,7 +3,7 @@
     --colour-secondary: #F02D3A;
     --colour-tertiary: #FFD3D1;
     --colour-light: #FFFFFF;
-    --colour-dark: #6A6A6A;
+    --colour-dark: #8C8C8C;
 }
 
 body{
@@ -30,7 +30,7 @@ h3{
     color: var(--colour-secondary)
 }
 
-.product-header > h3{
+.product-card-header > h3{
     color: var(--colour-tertiary);
 }
 
@@ -38,7 +38,7 @@ h4{
     color: var(--colour-primary);
 }
 
-.product-header > h4{
+.product-card-header > h4{
     color: var(--colour-secondary);
 }
 

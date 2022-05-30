@@ -11,6 +11,7 @@
     --text-xxl: 4rem;
     --text-xl: 3rem;
     --text-lg: 2rem;
+    --text-inbetween: 1.6rem;
     --text-md: 1.2rem;
 }
 
@@ -37,19 +38,19 @@ h4{
     font-family: var(--tertiary-font);
 }
 
-div{
+a{
+    font-family: var(--secondary-font);
+    font-weight: bold;
+    font-size: var(--text-inbetween);
+    text-decoration: none;
+}
+
+
+.logo{
     font-family: var(--primary-font);
-    font-size: var(--text-xxl);
+    font-size: var(--text-xl);
 }
 
-li{
-    font-family: var(--tertiary-font);
-}
-
-p{
-    font-family: var(--tertiary-font);
-}
-
-header{
-
+.material-symbols-outlined{
+    font-size: var(--text-xl);
 }

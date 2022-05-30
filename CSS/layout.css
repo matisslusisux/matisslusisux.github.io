@@ -1,7 +1,13 @@
-main{
-    margin-top: 5rem;
-    margin-left: 2rem;
-    margin-right: 2rem;
+html{
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body{
+    margin: 0;
 }
 
 header{
@@ -13,5 +19,61 @@ header{
     padding: 10px 30px 10px 30px;
 }
 
+@media screen and (max-width: 700px) {
+    #desktop-topnav {
+        display: none;
+    }
 
+    #mobile-topnav {
+        display: block;
+    }
+}
 
+@media screen and (min-width: 700px) {
+    #desktop-topnav {
+        display: block;
+    }
+
+    #mobile-topnav {
+        display: none;
+    }
+}
+
+#feature-list{
+    position: relative;
+    padding: 100px 0 0 40px;
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+a + a{
+    margin-left: 30px;
+}
+
+.product-card{
+    border: 3px solid var(--colour-dark);
+    border-radius: 20px;
+    width: 400px;
+    box-shadow: 5px 3px 8px;
+    margin: 10px;
+    padding: 5px 0px 0px 15px;
+}
+
+.product-content{
+    float: left;
+    width: 50%;
+}
+
+.product-card > img{
+    float: right;
+    width: 50%;
+    border: 0px solid transparent;
+    border-radius: 0px 0px 20px 0px;
+}

@@ -10,6 +10,14 @@ body{
     color: var(--colour-dark);
 }
 
+header{
+    background-color: var(--colour-primary);
+}
+
+.material-symbols-outlined{
+    color: var(--colour-secondary);
+}
+
 h1{
     color: var(--colour-tertiary);
 }
@@ -22,14 +30,26 @@ h3{
     color: var(--colour-secondary)
 }
 
+.product-header > h3{
+    color: var(--colour-tertiary);
+}
+
 h4{
     color: var(--colour-primary);
 }
 
-div{
+.product-header > h4{
+    color: var(--colour-secondary);
+}
+
+a{
+    color: var(--colour-secondary);
+}
+
+.logo{
     color: var(--colour-tertiary);
 }
 
-header{
+.product-card{
     background-color: var(--colour-primary);
 }

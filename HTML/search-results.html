@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Steve Boyd Motors | Search Results</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0"/>
     <link rel="stylesheet" href="../CSS/reset.css">
     <link rel="stylesheet" href="../CSS/main.css">
 </head>
@@ -13,30 +14,37 @@
 <body>
     <!-- Red strip header at top -->
     <header>
-        <div>SBM</div>
+        <div class="logo">SBM</div>
 
         <!-- Index navigation -->
-        <nav>
-            <img src="" alt="Home icon">
-            <img src="" alt="Listings icon">
-            <img src="" alt="Compare icon">
+        <nav id="desktop-topnav">
+            <a href="">Home</a>
+            <a href="">Listings</a>
+            <a href="">Comparison</a>
         </nav>
 
+        <nav id="mobile-topnav">
+            <i class="material-symbols-outlined">house</i>
+            <i class="material-symbols-outlined">directions_car</i>
+            <i class="material-symbols-outlined">exposure</i>
+        </nav>
     </header>
 
     <!-- Feature navigation -->
-    <nav>
-        <img src="" alt="Colour wheel">
-        <img src="" alt="Odometer icon">
-        <img src="" alt="Brand icon">
-        <img src="" alt="Cost icon">
+    <nav id="feature-list">
+        <i class="material-symbols-outlined">opacity</i>
+        <i class="material-symbols-outlined">speed</i>
+        <i class="material-symbols-outlined">api</i>
+        <i class="material-symbols-outlined">paid</i>
     </nav>
 
     <!-- Product listing page -->
     <main>
-        <article>
+        <article class="product-card">
+            <div class="product-header">
             <h3>2016 Volkswagen Golf</h3>
             <h4>GTI</h4>
+            </div>
             <ul>
                 <li>29,500km</li>
                 <li>1980cc</li>
@@ -45,12 +53,15 @@
             </ul>
             <p>Asking Price:</p>
             <h3>$36,990</h3>
-            <img src="" alt="2016 Volkswagen Golf Main Image">
+            <img src="../Images/Main Listing/MainListing.jpg" alt="2016 Volkswagen Golf">
         </article>
 
-        <article>
+        <article class="product-card">
+            <div class="product-header">
             <h3>2012 Audi Q5</h3>
             <h4>S Line Quattro</h4>
+            </div>
+            <div class="product-content">
             <ul>
                 <li>146,000km</li>
                 <li>1980cc</li>
@@ -59,7 +70,24 @@
             </ul>
             <p>Asking Price:</p>
             <h3>$17,870</h3>
-            <img src="" alt="2012 Audi Q5 Main Image">
+            </div>
+            <img src="../Images/Additional Listings/Audi.png" alt="2012 Audi Q5">
+        </article>
+
+        <article class="product-card">
+            <div class="product-header">
+            <h3>2007 BMW 335I</h3>
+            <h4>Manual Turbo e92</h4>
+            </div>
+            <ul>
+                <li>146,000km</li>
+                <li>1980cc</li>
+                <li>Petrol</li>
+                <li>Automatic</li>
+            </ul>
+            <p>Asking Price:</p>
+            <h3>$28,800</h3>
+            <img src="../Images/Additional Listings/BMW.png" alt="2007 BMW 335I">
         </article>
     </main>
 

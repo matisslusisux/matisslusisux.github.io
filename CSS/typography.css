@@ -23,10 +23,13 @@ body{
 
 h1{
     font-size: var(--text-xxl);
+    font-family: var(--primary-font);
 }
 
 h2{
     font-size: var(--text-xl);
+    font-family: var(--secondary-font);
+    font-weight: bold;
 }
 
 h3{

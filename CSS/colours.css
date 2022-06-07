@@ -53,3 +53,7 @@ a{
 .product-card{
     background-color: var(--colour-primary);
 }
+
+#main{
+    background-color: var(--colour-primary);
+}

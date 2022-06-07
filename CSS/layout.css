@@ -7,7 +7,7 @@ html{
 }
 
 body{
-    margin: 0;
+    margin: 0
 }
 
 header{
@@ -75,6 +75,9 @@ i + i {
     #desktop-topnav {
         display: none;
     }
+    #sbm{
+        text-align: center;
+    }
 
     #mobile-topnav {
         display: block;
@@ -84,6 +87,9 @@ i + i {
 @media screen and (min-width: 700px) {
     #desktop-topnav {
         display: block;
+    }
+    #sbm{
+        font-size: 8rem;
     }
 
     #mobile-topnav {
@@ -98,4 +104,12 @@ i + i {
 #feature-list > i{
     border: 3px solid var(--colour-dark);
     border-radius: 50%;
+}
+
+#enquiry-confirmation{
+    background-image: url("../Images/Other/Background.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
 }

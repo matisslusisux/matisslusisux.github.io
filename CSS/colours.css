@@ -4,6 +4,7 @@
     --colour-tertiary: #FFD3D1;
     --colour-light: #FFFFFF;
     --colour-dark: #8C8C8C;
+    --colour-double-dark: #575757;
 }
 
 body{
@@ -14,9 +15,14 @@ header{
     background-color: var(--colour-primary);
 }
 
-.material-symbols-outlined{
-    color: var(--colour-secondary);
+label{
+    color: var(--colour-primary);
 }
+
+input:checked + .bullet{
+    background-color: var(--colour-primary);
+}
+
 
 h1{
     color: var(--colour-tertiary);
@@ -46,6 +52,14 @@ a{
     color: var(--colour-secondary);
 }
 
+p{
+    color: var(--colour-double-dark);
+}
+
+.material-symbols-outlined{
+    color: var(--colour-secondary);
+}
+
 .logo{
     color: var(--colour-tertiary);
 }
@@ -58,6 +72,22 @@ a{
     background-color: var(--colour-light);
 }
 
+.bullet{
+    background-color: var(--colour-double-dark);
+}
+
 #main{
     background-color: var(--colour-primary);
+}
+
+.bullet::before{
+    background-color: var(--colour-secondary);
+}
+
+.circle::before{
+    background-color: var(--colour-secondary);
+}
+
+.switch:hover > .bullet{
+    background-color: var(--colour-tertiary);
 }

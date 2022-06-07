@@ -11,13 +11,24 @@
     --text-xxl: 4rem;
     --text-xl: 3rem;
     --text-lg: 2rem;
-    --text-inbetween: 1.6rem;
+    --text-md: 1.6rem;
 
     font-family: var(--tertiary-font);
 }
 
 body{
     font-size: var(--text-base-size);
+}
+
+label{
+    font-size: var(--text-lg);
+    font-family: var(--secondary-font);
+    font-weight: bold;
+}
+
+input{
+    font-size: var(--text-md);
+    font-family: var(--tertiary-font);
 }
 
 h1{
@@ -45,10 +56,14 @@ h4{
 a{
     font-family: var(--secondary-font);
     font-weight: bold;
-    font-size: var(--text-inbetween);
+    font-size: var(--text-md);
     text-decoration: none;
 }
 
+p{ 
+    font-family: var(--tertiary-font);
+    font-size: var(--text-base-size);
+}
 
 .logo{
     font-family: var(--primary-font);

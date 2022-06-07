@@ -54,6 +54,10 @@ a{
     background-color: var(--colour-primary);
 }
 
+.product-card-special{
+    background-color: var(--colour-light);
+}
+
 #main{
     background-color: var(--colour-primary);
 }

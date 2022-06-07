@@ -7,12 +7,11 @@
     --secondary-font: 'MOMCAKE', sans-serif;
     --tertiary-font: 'BSB Text Classic', sans-serif;
 
-    --text-base-size: 1rem;
+    --text-base-size: 1.2rem;
     --text-xxl: 4rem;
     --text-xl: 3rem;
     --text-lg: 2rem;
     --text-inbetween: 1.6rem;
-    --text-md: 1.2rem;
 
     font-family: var(--tertiary-font);
 }
@@ -40,7 +39,7 @@ h3{
 
 h4{
     font-family: var(--tertiary-font);
-    font-size: var(--text-md);
+    font-size: var(--text-base-size);
 }
 
 a{

@@ -91,3 +91,11 @@ p{
 .switch:hover > .bullet{
     background-color: var(--colour-tertiary);
 }
+
+#button-home{
+    background-color: var(--colour-tertiary);
+}
+
+#button-home:hover{
+    background-color: var(--colour-primary);
+}

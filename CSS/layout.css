@@ -35,6 +35,10 @@ input{
     border-bottom-style: hidden;
 }
 
+img{
+    max-width: 50vw;
+}
+
 a + a{
     margin-left: 30px;
 }
@@ -152,6 +156,7 @@ input:checked + .bullet::before{
     #desktop-topnav {
         display: none;
     }
+
     #sbm{
         text-align: center;
     }
@@ -159,18 +164,28 @@ input:checked + .bullet::before{
     #mobile-topnav {
         display: block;
     }
+
+    
 }
 
 @media screen and (min-width: 700px) {
     #desktop-topnav {
         display: block;
     }
-    #sbm{
-        font-size: 8rem;
-    }
 
     #mobile-topnav {
         display: none;
+    }
+    #body-main{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        justify-items: center;
+        align-items: center;
+    }
+    #body-main > div > a{
+        position: relative;
+        left: 40%;
     }
 }
 
@@ -194,3 +209,9 @@ input:checked + .bullet::before{
 #tick{
     max-width: 100px;
 }
+
+#sbm{
+    padding: 50px;
+}
+
+

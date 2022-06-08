@@ -8,8 +8,8 @@
     --tertiary-font: 'BSB Text Classic', sans-serif;
 
     --text-base-size: 1.2rem;
-    --text-xxl: 4rem;
-    --text-xl: 3rem;
+    --text-xxl: 7vw;
+    --text-xl: 5vw;
     --text-lg: 2rem;
     --text-md: 1.6rem;
 
@@ -76,4 +76,8 @@ p{
 
 .additional-features{
     list-style: disc;
+}
+
+#sbm{
+    font-size: var(--text-xxl);
 }

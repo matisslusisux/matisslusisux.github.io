@@ -93,9 +93,13 @@ p{
 }
 
 #button-home{
+    background-color: var(--colour-light);
+}
+
+.button:hover{
     background-color: var(--colour-tertiary);
 }
 
 #button-home:hover{
-    background-color: var(--colour-primary);
+    background-color: var(--colour-tertiary);
 }

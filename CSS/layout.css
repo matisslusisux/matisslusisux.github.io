@@ -164,8 +164,6 @@ input:checked + .bullet::before{
     #mobile-topnav {
         display: block;
     }
-
-    
 }
 
 @media screen and (min-width: 700px) {
@@ -186,6 +184,12 @@ input:checked + .bullet::before{
     #body-main > div > a{
         position: relative;
         left: 40%;
+    }
+    #sbm{
+        text-align: left;
+    }
+    #slogan{
+        text-align: left;
     }
 }
 
@@ -214,4 +218,11 @@ input:checked + .bullet::before{
     padding: 50px;
 }
 
+#body-main{
+    text-align: center;
+}
 
+#body-main > div > a{
+    position: relative;
+    left: 0%
+}

@@ -8,10 +8,15 @@
     --tertiary-font: 'BSB Text Classic', sans-serif;
 
     --text-base-size: 1.2rem;
-    --text-xxl: 7vw;
-    --text-xl: 5vw;
+    --text-xxl: 5rem;
+    --text-xl: 3rem;
     --text-lg: 2rem;
     --text-md: 1.6rem;
+
+    --text-rxxl: 7vw;
+    --text-rxl: 5vw;
+    --text-rlg: 4vw;
+    --text-rmd: 3vw;
 
     font-family: var(--tertiary-font);
 }
@@ -79,5 +84,9 @@ p{
 }
 
 #sbm{
-    font-size: var(--text-xxl);
+    font-size: var(--text-rxxl);
+}
+
+#slogan{
+    font-size: var(--text-rxl);
 }

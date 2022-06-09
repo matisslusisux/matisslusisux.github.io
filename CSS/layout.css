@@ -99,15 +99,36 @@ a + a{
     padding: 5px 10px 5px 10px;
 }
 
-.comparison-container{
+.desktop-comparison-container{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(4, 1fr);
     justify-content: space-evenly;
     justify-items: center;
+    align-items: center;
+    column-gap: 10px;
+    row-gap: 10px;
+    text-align: center;
 }
 
-.comparison-container > img{
+.desktop-comparison-container > img{
+    object-fit: cover;
+    width: 100%;
+}
+
+.mobile-comparison-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(12, 1fr);
+    justify-content: space-evenly;
+    justify-items: center;
+    align-items: center;
+    column-gap: 10px;
+    row-gap: 10px;
+    text-align: center;
+}
+
+.mobile-comparison-container > img{
     object-fit: cover;
     width: 100%;
 }

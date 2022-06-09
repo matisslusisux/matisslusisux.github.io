@@ -114,6 +114,7 @@ a + a{
 .desktop-comparison-container > img{
     object-fit: cover;
     width: 100%;
+    border-radius: 26px;
 }
 
 .mobile-comparison-container{
@@ -131,7 +132,10 @@ a + a{
 .mobile-comparison-container > img{
     object-fit: cover;
     width: 100%;
+    border-radius: 26px;
 }
+
+
 
 .input-box:focus{
     outline: none;
@@ -259,17 +263,9 @@ input:checked + .bullet::before{
     #sbm{
         text-align: center;
     }
-
-    #mobile-topnav {
-        display: block;
-    }
 }
 
 @media screen and (min-width: 700px) {
-    #desktop-topnav {
-        display: block;
-    }
-
     #mobile-topnav {
         display: none;
     }
@@ -306,6 +302,18 @@ input:checked + .bullet::before{
         display: block;
     } 
     #mobile-feature-list{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .desktop-comparison-container{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 900px){
+    .mobile-comparison-container{
         display: none;
     }
 }

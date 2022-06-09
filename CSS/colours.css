@@ -1,3 +1,4 @@
+/* Variables and attributes related to the colouring of elements across all pages */
 :root{
     --colour-primary: #8D0801;
     --colour-secondary: #F02D3A;
@@ -34,6 +35,16 @@ h2{
 h3{
     color: var(--colour-secondary)
 }
+
+/* Colouring specifically related to the home page */
+
+/* Colouring specifically related to the product listing page */
+
+/* Colouring specifically related to the product pages */
+
+/* Colouring specifically related to the comparison page */
+
+/* Colouring specifically related to the enquiry form and confirmation pages */
 
 .product-card-header > h3{
     color: var(--colour-tertiary);

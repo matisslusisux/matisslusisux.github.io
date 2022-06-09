@@ -1,3 +1,4 @@
+// Function checks the enquiry form for unentered input fields
 function validateForm(){
     let name = document.forms['enquiryForm']['form-name'].value;
     let email = document.forms['enquiryForm']['form-email'].value;
@@ -24,5 +25,3 @@ function validateForm(){
         return false;
     }
 }
-
-

@@ -2,6 +2,7 @@
 @import url('//db.onlinewebfonts.com/c/7716890b939cbfd5a39378ab8dc22c2b?family=BSB+Text+Classic');
 @import url('http://fonts.cdnfonts.com/css/momcake');
 
+/* Variables and attributes related to the fonts, their styling and sizing of elements across all pages */
 :root{
     --primary-font: 'RACE1 Brannt Plus Chiseled NCV', sans-serif;
     --secondary-font: 'MOMCAKE', sans-serif;
@@ -70,6 +71,16 @@ p{
     font-family: var(--tertiary-font);
     font-size: var(--text-base-size);
 }
+
+/* Font styling and sizing specifically related to the home page */
+
+/* Font styling and sizing specifically related to the product listing page */
+
+/* Font styling and sizing specifically related to the product pages */
+
+/* Font styling and sizing specifically related to the comparison page */
+
+/* Font styling and sizing specifically related to the enquiry form and confirmation pages */
 
 .logo{
     font-family: var(--primary-font);

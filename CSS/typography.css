@@ -12,6 +12,7 @@
     --text-xl: 3rem;
     --text-lg: 2rem;
     --text-md: 1.6rem;
+    --text-sm: 1.4rem;
 
     --text-rxxl: 7vw;
     --text-rxl: 5vw;
@@ -97,5 +98,9 @@ p{
 
 #slogan{
     font-size: var(--text-rxl);
+}
+
+#form-enquiry{
+    font-size: var(--text-sm);
 }
 

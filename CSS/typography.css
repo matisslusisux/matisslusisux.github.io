@@ -83,6 +83,14 @@ p{
     list-style: disc;
 }
 
+.button{
+    font-family: var(--secondary-font);
+    font-weight: bold;
+    font-size: var(--text-md);
+    text-decoration: none;
+    cursor: pointer;
+}
+
 #sbm{
     font-size: var(--text-rxxl);
 }

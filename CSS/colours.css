@@ -96,6 +96,10 @@ p{
     background-color: var(--colour-light);
 }
 
+.button{
+    color: var(--colour-secondary);
+}
+
 .button:hover{
     background-color: var(--colour-tertiary);
 }

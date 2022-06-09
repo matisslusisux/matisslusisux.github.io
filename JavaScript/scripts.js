@@ -2,6 +2,7 @@ function validateForm(){
     let name = document.forms['enquiryForm']['form-name'].value;
     let email = document.forms['enquiryForm']['form-email'].value;
     let phone = document.forms['enquiryForm']['form-phone'].value;
+    let enquiry = document.forms['enquiryForm']['form-enquiry'].value;
     
     if (name == ""){
         alert("Please enter your name.");
@@ -17,4 +18,11 @@ function validateForm(){
         alert("Please enter your phone number.");
         return false;
     }
+
+    if (enquiry == ""){
+        alert("Please enter your enquiry so we can assist you.");
+        return false;
+    }
 }
+
+

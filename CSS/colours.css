@@ -23,7 +23,6 @@ input:checked + .bullet{
     background-color: var(--colour-primary);
 }
 
-
 h1{
     color: var(--colour-tertiary);
 }

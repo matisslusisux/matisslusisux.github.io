@@ -1,4 +1,4 @@
-/* Attributes related to the layout of various elements across all pages */
+/* SECTION: Attributes related to the layout composition of various elements across all pages */
 html{
     box-sizing: border-box;
 }
@@ -44,17 +44,62 @@ a + a{
     margin-left: 30px;
 }
 
-/* Layout composition specifically related to the home page */
+.button{
+    border: 3px solid var(--colour-dark);
+    border-radius: 20px;
+    margin: 20px;
+    padding: 5px 10px 5px 10px;
+}
 
-/* Layout composition specifically related to the product listing page */
+#sbm{
+    padding: 50px;
+}
 
-/* Layout composition specifically related to the product pages */
+/* Adjustments to top navbar and home page layout for responsive sizing */
+@media screen and (max-width: 700px) {
+    #desktop-topnav {
+        display: none;
+    }
 
-/* Layout composition specifically related to the comparison page */
+    #sbm{
+        text-align: center;
+    }
+}
 
-/* Layout composition specifically related to the enquiry form and confirmation pages */
+@media screen and (min-width: 700px) {
+    #mobile-topnav {
+        display: none;
+    }
+    #home-body{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        justify-items: center;
+        align-items: center;
+    }
+    #body-main > div > a{
+        position: relative;
+        left: 40%;
+    }
+    #sbm{
+        text-align: left;
+    }
+    #slogan{
+        text-align: left;
+    }
+}
 
+/* SECTION: Layout composition specifically related to the home page */
+#home-body{
+    text-align: center;
+}
 
+#home-body > div > a{
+    position: relative;
+    left: 0%
+}
+
+/* SECTION: Layout composition specifically related to the product listing page */
 .feature-list * {
     margin-left: 15px;
     vertical-align: middle;
@@ -91,26 +136,109 @@ a + a{
     border-radius: 0px 0px 20px 0px;
 }
 
-.product-card-special{
-    border: 3px solid var(--colour-dark);
-    border-radius: 20px;
-    width: 500px;
-    margin: 10px;
-    padding: 10px 0px 25px 15px;
-    text-align: center;
+/* Adjustments to filtering attributes for responsive sizing */
+@media screen and (max-width: 1230px){
+    #desktop-feature-list{
+        display: none;
+    }
+    #mobile-feature-list{
+        display: block;
+    }
 }
 
-.product-card-special * {
-    padding-bottom: 15px;
+@media screen and (min-width: 1230px){
+    #desktop-feature-list{
+        display: block;
+    } 
+    #mobile-feature-list{
+        display: none;
+    }
 }
 
-.button{
-    border: 3px solid var(--colour-dark);
-    border-radius: 20px;
+#desktop-feature-list{
     margin: 20px;
-    padding: 5px 10px 5px 10px;
 }
 
+#desktop-feature-list > i{
+    padding: 5px;
+    border: 3px solid var(--colour-dark);
+    border-radius: 50%;
+}
+
+#mobile-feature-list{
+    margin: 20px;
+}
+
+#mobile-feature-list > i{
+    padding: 5px;
+    border: 3px solid var(--colour-dark);
+    border-radius: 50%;
+}
+
+/* SECTION: Layout composition specifically related to the product pages */
+/* Image gallery grid set-up */
+.image-gallery{
+    float: left;
+    display: grid;
+    width: 50%;
+    grid-template-columns: repeat(7, 1fr);
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+/* Individual element layout for image gallery */
+.product-image{
+    grid-row: 1/7;
+    grid-column: 1/8;
+    object-fit: cover;
+    width: 100%;
+}
+.product-image2{
+    grid-row: 7;
+    grid-column: 1;
+    object-fit: cover;
+    width: 100%;
+    border: 4px solid var(--colour-secondary);
+}
+.product-image3{
+    grid-row: 7;
+    grid-column: 2;
+    object-fit: cover;
+    width: 100%;
+}
+.product-image4{
+    grid-row: 7;
+    grid-column: 3;
+    object-fit: cover;
+    width: 100%;
+}
+.product-image5{
+    grid-row: 7;
+    grid-column: 4;
+    object-fit: cover;
+    width: 100%;
+}
+.product-image6{
+    grid-row: 7;
+    grid-column: 5;
+    object-fit: cover;
+    width: 100%;
+}
+.product-image7{
+    grid-row: 7;
+    grid-column: 6;
+    object-fit: cover;
+    width: 100%;
+}
+.product-image8{
+    grid-row: 7;
+    grid-column: 7;
+    object-fit: cover;
+    width: 100%;
+}
+
+/* SECTION: Layout composition specifically related to the comparison page */
+/* Structuring of desktop comparison grid */
 .desktop-comparison-container{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -129,6 +257,7 @@ a + a{
     border-radius: 26px;
 }
 
+/* Structuring of mobile comparison grid */
 .mobile-comparison-container{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -147,6 +276,56 @@ a + a{
     border-radius: 26px;
 }
 
+/* Adjustments to comparison table and enquiry form for responsive sizing */
+@media screen and (max-width: 900px){
+    .desktop-comparison-container{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 900px){
+    .mobile-comparison-container{
+        display: none;
+    }
+    #contact-details{
+        float: left;
+    }
+    #enquiry{
+        float: right;
+    }
+}
+
+/* SECTION: Layout composition specifically related to the enquiry form and confirmation pages */
+.product-card-special{
+    border: 3px solid var(--colour-dark);
+    border-radius: 20px;
+    width: 500px;
+    margin: 10px;
+    padding: 10px 10px 25px 10px;
+    text-align: center;
+}
+
+.product-card-special * {
+    padding-bottom: 15px;
+}
+
+.product-card-special > .button{
+    padding: 5px 10px 5px 10px;
+}
+
+#enquiry-confirmation{
+    background-image: url("../Images/Other/Background.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+#tick{
+    max-width: 100px;
+}
+
+/* Styling elements to create toggle bullet */
 .input-box:focus{
     outline: none;
 }
@@ -202,178 +381,4 @@ input:checked + .bullet::before{
     opacity: 0;
     width: 0;
     height: 0;
-}
-
-.image-gallery{
-    float: left;
-    display: grid;
-    width: 50%;
-    grid-template-columns: repeat(7, 1fr);
-    column-gap: 10px;
-    row-gap: 10px;
-}
-
-/* Image Gallery Grid Layout */
-.product-image{
-    grid-row: 1/7;
-    grid-column: 1/8;
-    object-fit: cover;
-    width: 100%;
-}
-.product-image2{
-    grid-row: 7;
-    grid-column: 1;
-    object-fit: cover;
-    width: 100%;
-    border: 4px solid var(--colour-secondary);
-}
-.product-image3{
-    grid-row: 7;
-    grid-column: 2;
-    object-fit: cover;
-    width: 100%;
-}
-.product-image4{
-    grid-row: 7;
-    grid-column: 3;
-    object-fit: cover;
-    width: 100%;
-}
-.product-image5{
-    grid-row: 7;
-    grid-column: 4;
-    object-fit: cover;
-    width: 100%;
-}
-.product-image6{
-    grid-row: 7;
-    grid-column: 5;
-    object-fit: cover;
-    width: 100%;
-}
-.product-image7{
-    grid-row: 7;
-    grid-column: 6;
-    object-fit: cover;
-    width: 100%;
-}
-.product-image8{
-    grid-row: 7;
-    grid-column: 7;
-    object-fit: cover;
-    width: 100%;
-}
-
-@media screen and (max-width: 700px) {
-    #desktop-topnav {
-        display: none;
-    }
-
-    #sbm{
-        text-align: center;
-    }
-}
-
-@media screen and (min-width: 700px) {
-    #mobile-topnav {
-        display: none;
-    }
-    #body-main{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto auto;
-        justify-items: center;
-        align-items: center;
-    }
-    #body-main > div > a{
-        position: relative;
-        left: 40%;
-    }
-    #sbm{
-        text-align: left;
-    }
-    #slogan{
-        text-align: left;
-    }
-}
-
-@media screen and (max-width: 1230px){
-    #desktop-feature-list{
-        display: none;
-    }
-    #mobile-feature-list{
-        display: block;
-    }
-}
-
-@media screen and (min-width: 1230px){
-    #desktop-feature-list{
-        display: block;
-    } 
-    #mobile-feature-list{
-        display: none;
-    }
-}
-
-@media screen and (max-width: 900px){
-    .desktop-comparison-container{
-        display: none;
-    }
-}
-
-@media screen and (min-width: 900px){
-    .mobile-comparison-container{
-        display: none;
-    }
-    #contact-details{
-        float: left;
-    }
-    #enquiry{
-        float: right;
-    }
-}
-
-#desktop-feature-list{
-    margin: 20px;
-}
-
-#desktop-feature-list > i{
-    padding: 5px;
-    border: 3px solid var(--colour-dark);
-    border-radius: 50%;
-}
-
-#mobile-feature-list{
-    margin: 20px;
-}
-
-#mobile-feature-list > i{
-    padding: 5px;
-    border: 3px solid var(--colour-dark);
-    border-radius: 50%;
-}
-
-#enquiry-confirmation{
-    background-image: url("../Images/Other/Background.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
-}
-
-#tick{
-    max-width: 100px;
-}
-
-#sbm{
-    padding: 50px;
-}
-
-#body-main{
-    text-align: center;
-}
-
-#body-main > div > a{
-    position: relative;
-    left: 0%
 }

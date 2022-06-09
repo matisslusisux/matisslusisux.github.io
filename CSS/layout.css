@@ -68,7 +68,6 @@ a + a{
 }
 
 .product-card-content{
-    display: inline-block;
     float: left;
     width: 50%;
 }

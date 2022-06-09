@@ -59,6 +59,7 @@ a + a{
 
 .product-card-header{
     float: left;
+    width: 70%;
 }
 
 .product-card > i{

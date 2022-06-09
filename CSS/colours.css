@@ -52,11 +52,15 @@ a{
 }
 
 p{
-    color: var(--colour-double-dark);
+    color: var(--colour-dark);
 }
 
 .material-symbols-outlined{
     color: var(--colour-secondary);
+}
+
+li > .material-symbols-outlined{
+    color: var(--colour-dark);
 }
 
 .logo{

@@ -68,6 +68,7 @@ p{
     background-color: var(--colour-primary);
 }
 
+
 .product-card-special{
     background-color: var(--colour-light);
 }
@@ -102,4 +103,9 @@ p{
 
 #button-home:hover{
     background-color: var(--colour-tertiary);
+}
+
+#colourwheel{
+    color: transparent;
+    background-image: conic-gradient(#FF0000, #ED10AB, #842CD1, #4960D4, #3DD7D7, #35DC89, #2EE164, #2DE527, #8DEC21, #D9F159, #F6C88B, #FF0000);
 }

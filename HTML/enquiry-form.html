@@ -6,10 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Steve Boyd Motors | Search Results</title>
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0" />
     <link rel="stylesheet" href="../CSS/reset.css">
     <link rel="stylesheet" href="../CSS/main.css">
+    <script src="../JavaScript/scripts.js"></script>
 </head>
 
 <body>
@@ -33,21 +33,21 @@
     <!-- Product listing page -->
     <main>
         <h2>Enquiry Form</h2>
-        <form>
+        <form name="enquiryForm" onsubmit="return validateForm()">
             <ul>
                 <li>
                     <label>Name:</label>
-                    <input type="text" name="" class="input-box">
+                    <input type="text" name="form-name" class="input-box">
                 </li>
 
                 <li>
                     <label>Email:</label>
-                    <input type="text" name="" class="input-box">
+                    <input type="text" name="form-email" class="input-box">
                 </li>
 
                 <li>
                     <label>Phone:</label>
-                    <input type="text" name="" class="input-box">
+                    <input type="text" name="form-phone" class="input-box">
                 </li>
 
                 <li>
@@ -87,9 +87,10 @@
                 <li></li>
 
                 </ul>
+            <input type="submit" class="button" value="Submit" href="../HTML/enquiry-confirmation.html">
         </form>
         
-        <a href="" class="button">Next</a>
+        
     </main>
 
 </body>
